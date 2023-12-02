@@ -16,4 +16,8 @@ contract ejemplos_enums{
         state = estado(1);
     }
 
+    function getEstad() public view returns(estado){
+        return state;
+    }
+    
 }

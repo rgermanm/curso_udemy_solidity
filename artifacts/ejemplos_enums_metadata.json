@@ -18,6 +18,19 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEstad",
+				"outputs": [
+					{
+						"internalType": "enum ejemplos_enums.estado",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -48,10 +61,10 @@
 	},
 	"sources": {
 		"enums.sol": {
-			"keccak256": "0xb7b1ac266b819bfad0a89b6307901f266eb3c14968448860317c658931573645",
+			"keccak256": "0x563cc201badb4d8c42be3f745a04b82a41fac050adc14a5b345077efdb54b6bd",
 			"urls": [
-				"bzz-raw://02193d8ca04be5b78f506ba443e3baca4644cd30c0a8a5c8a289eec142fd3763",
-				"dweb:/ipfs/QmbN9Yai1HfXdZzuj8BsYmEZtXFyP9x9tfHTneAEzkCi8V"
+				"bzz-raw://97266498905c5666ddb6632736186c22549920f7508c1251c4874f3933075d46",
+				"dweb:/ipfs/QmZ4KTQpuz2dz8eFegmZHEPCv3dtX7v3LjnHD22xuWQJGa"
 			]
 		}
 	},
