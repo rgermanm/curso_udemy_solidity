@@ -33,10 +33,10 @@
 	},
 	"sources": {
 		"variables.sol": {
-			"keccak256": "0xc85af746354b3c779131b38f5966fc69279cfed0826f448084f4e40947c1313d",
+			"keccak256": "0x44a8830189a493c1cc8a6bcf61aab7278faea49a851625c0942721159c5ae60c",
 			"urls": [
-				"bzz-raw://ef48be2b99aaac56d9c9be9dd581e9df241231d7ba063f0e840f1143d849cfe6",
-				"dweb:/ipfs/QmYtUGLbqzya2LoNS3jNSVYRnEbMtwVUK7iuwdBgYUezy4"
+				"bzz-raw://c4fb1ea426087ca8ed28b110179691f9d4626d87abd729d92c66fcc8742d8f20",
+				"dweb:/ipfs/QmSFwT4bWub4fr6kwGyuvJpFbrgH4gbtxgo4dLEVx2mP9r"
 			]
 		}
 	},
