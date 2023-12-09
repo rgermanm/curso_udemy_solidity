@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.23+commit.f704f362"
+		"version": "0.6.12+commit.27d51765"
 	},
 	"language": "Solidity",
 	"output": {
@@ -18,9 +18,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"enums.sol": "enums"
+			"SafeMath.sol": "SafeMath"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -32,11 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"enums.sol": {
-			"keccak256": "0x5bd7cf7ac427ca139326e5edcd80d00d594cd40a3c247e32ce8c1c86cffd9002",
+		"SafeMath.sol": {
+			"keccak256": "0xc423fc3599fa5e92986538b22b0e53ebe1184e29cf0375cdcb6076e953049389",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://ccd94c5501ba3bb20c029a5827497a521503c9c774dd5c402680ba23766d8383",
-				"dweb:/ipfs/QmSEf9Sq6x6Mp9PiwTEWg625GSDAujsg9JTtMaBAPUkqsP"
+				"bzz-raw://81297790221a0f9287c27515b4c685c8b5526bd09219ce6f0d5be2f02ac106ad",
+				"dweb:/ipfs/QmSc7rWN9aFy7vCuxJf2h4XvYx16jFbqxUCK5wmBdx4zbX"
 			]
 		}
 	},
