@@ -6,6 +6,56 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "TotalSupply",
 				"outputs": [
@@ -175,11 +225,11 @@
 			]
 		},
 		"custom_token/ERC20.sol": {
-			"keccak256": "0x80a9312d0d6538e069e97a40021510c4d5454ce6df226eabc9440893e5d3e920",
+			"keccak256": "0x7fe306d7d8a62f40a5a93239c1a637c889f4a522051fa69d0ea064348a961b1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d93e6ff0e45fb1c40cf017aba05fb3f54ec0bf1df96dd9de504ddc6b20f9111f",
-				"dweb:/ipfs/QmcbUYoonHwYHr5BHJ8yPSvLaNiErVogwgyh4NC3scC5nf"
+				"bzz-raw://ada40c2bba14c4f572a8f0600bb368ac7a900a6b13b8ff2eef93f5e360238709",
+				"dweb:/ipfs/Qmf2PBZzvxGQG1CaLPbtVZaVe3LZvKGR61u6LiDabLdtd1"
 			]
 		}
 	},

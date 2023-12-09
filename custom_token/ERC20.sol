@@ -31,30 +31,72 @@ interface IERC20 {
         address recipient,
         uint256 amount
     ) external returns (bool);
+
+    //Evento cuando una cantidad pase de un origen a un destino
+    event Transfer(address indexed from, address indexed to, uint256 amount);
+    //Evento cuando se establece una asignacion con el metodo allowance
+
+    event Approval(
+        address indexed owner,
+        address indexed spender,
+        uint256 value
+    );
 }
 
 contract ERC20Basic is IERC20 {
+    using SafeMath for uint256;
+
+    //Nombre del token
+    string public constant name = "ERC20BlockchainAZ";
+    //Abreviacion del nombre del token
+    string public constant symbol = "ERCAZ";
+    //Numero maximo de decimales
+    uint8 public constant decimals = 18;
+
+    mapping(address => uint256) balances;
+    mapping(address => mapping(address => uint256)) allowed;
+    uint256 totalSupply_;
+
+    constructor(uint256 initialSupply) {
+        totalSupply_ = initialSupply;
+        balances[msg.sender] = totalSupply_;
+    }
+
     function TotalSupply() public view override returns (uint256) {
-        return 0;
+        return totalSupply_;
     }
 
-    function balanceOf(address account) public view override returns (uint256) {
-        return 0;
+    function increaseTotalSupple(uint256 newTokensAmount) public {
+        totalSupply_ += newTokensAmount;
+        balances[msg.sender] += newTokensAmount;
     }
 
-    function allowance(address owner, address spender)
+    function balanceOf(address tokenOwner)
+        public
+        view
+        override
+        returns (uint256)
+    {
+        return balances[tokenOwner];
+    }
+
+    function allowance(address owner, address delegate)
         external
         view
         returns (uint256)
     {
-        return 0;
+        return allowed[owner][delegate];
     }
 
-    function transfer(address recipient, uint256 amount)
+    function transfer(address recipient, uint256 numTokens)
         public
         override
         returns (bool)
     {
+        require(numTokens<=balances[msg.sender]);
+        balances[msg.sender]=balances[msg.sender].sub(numTokens);
+        balances[recipient]= balances[recipient].add(numTokens);
+        emit Transfer(msg.sender, recipient, numTokens);
         return true;
     }
 
