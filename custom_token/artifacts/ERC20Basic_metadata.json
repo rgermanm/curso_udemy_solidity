@@ -107,12 +107,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "spender",
+						"name": "delegate",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "numTokens",
 						"type": "uint256"
 					}
 				],
@@ -288,11 +288,11 @@
 			]
 		},
 		"custom_token/ERC20.sol": {
-			"keccak256": "0x7fe306d7d8a62f40a5a93239c1a637c889f4a522051fa69d0ea064348a961b1b",
+			"keccak256": "0x2ef732caefaa1f1582061b775091767ab1d88b474be94272c85607717a1647fe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ada40c2bba14c4f572a8f0600bb368ac7a900a6b13b8ff2eef93f5e360238709",
-				"dweb:/ipfs/Qmf2PBZzvxGQG1CaLPbtVZaVe3LZvKGR61u6LiDabLdtd1"
+				"bzz-raw://410af7f657d52731f68a3f460fe3a9ff32febf47dbdb60b893240d31d03cb546",
+				"dweb:/ipfs/QmTvaC9XUjrDZttPN7ELmscdvNBdEHMXr2ZHdSz5MjfTr2"
 			]
 		}
 	},
