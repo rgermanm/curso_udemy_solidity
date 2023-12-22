@@ -6,17 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "initialSupply",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -88,7 +77,7 @@
 					},
 					{
 						"internalType": "address",
-						"name": "delegate",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -107,12 +96,12 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "delegate",
+						"name": "spender",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "numTokens",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
@@ -131,7 +120,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "tokenOwner",
+						"name": "account",
 						"type": "address"
 					}
 				],
@@ -147,58 +136,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "decimals",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "newTokensAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "increaseTotalSupple",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -207,7 +144,7 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "numTokens",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
@@ -226,17 +163,17 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "sender",
 						"type": "address"
 					},
 					{
 						"internalType": "address",
-						"name": "buyer",
+						"name": "recipient",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "numTokens",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
@@ -265,7 +202,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"custom_token/ERC20.sol": "ERC20Basic"
+			"Disney/ERC20.sol": "IERC20"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -279,20 +216,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"SafeMath.sol": {
+		"Disney/ERC20.sol": {
+			"keccak256": "0x7cae4341c6651b54dd245a3e0bf33c52cec9df26e8344b653de3c2b10426ef90",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9527c593548e66ab98d82b46879f18e6ac8107bdf06c1c7f7ba9d70ded4b400e",
+				"dweb:/ipfs/QmVeHFGGwDxaAfv4hAgqukZn4nutemZwHA4BBhwTSe7Gt7"
+			]
+		},
+		"Disney/SafeMath.sol": {
 			"keccak256": "0xc423fc3599fa5e92986538b22b0e53ebe1184e29cf0375cdcb6076e953049389",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://81297790221a0f9287c27515b4c685c8b5526bd09219ce6f0d5be2f02ac106ad",
 				"dweb:/ipfs/QmSc7rWN9aFy7vCuxJf2h4XvYx16jFbqxUCK5wmBdx4zbX"
-			]
-		},
-		"custom_token/ERC20.sol": {
-			"keccak256": "0xd80e203b565448ba7c3f26213e4764347755cc969f75d43886dfc46a66359929",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://42c755a51abbdcd6539a92204e088593cb52d7fd7d22702988263b817988802a",
-				"dweb:/ipfs/QmULvAWpkPkGxojrwfrLcKHmFTkooxPi5euMiru8F51jZg"
 			]
 		}
 	},

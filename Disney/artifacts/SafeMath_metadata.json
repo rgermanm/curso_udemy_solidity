@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SafeMath.sol": "SafeMath"
+			"Disney/SafeMath.sol": "SafeMath"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -32,7 +32,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"SafeMath.sol": {
+		"Disney/SafeMath.sol": {
 			"keccak256": "0xc423fc3599fa5e92986538b22b0e53ebe1184e29cf0375cdcb6076e953049389",
 			"license": "MIT",
 			"urls": [

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.23+commit.f704f362"
+		"version": "0.8.22+commit.4fc1097e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -225,11 +225,11 @@
 			]
 		},
 		"custom_token/ERC20.sol": {
-			"keccak256": "0x2ef732caefaa1f1582061b775091767ab1d88b474be94272c85607717a1647fe",
+			"keccak256": "0xd80e203b565448ba7c3f26213e4764347755cc969f75d43886dfc46a66359929",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://410af7f657d52731f68a3f460fe3a9ff32febf47dbdb60b893240d31d03cb546",
-				"dweb:/ipfs/QmTvaC9XUjrDZttPN7ELmscdvNBdEHMXr2ZHdSz5MjfTr2"
+				"bzz-raw://42c755a51abbdcd6539a92204e088593cb52d7fd7d22702988263b817988802a",
+				"dweb:/ipfs/QmULvAWpkPkGxojrwfrLcKHmFTkooxPi5euMiru8F51jZg"
 			]
 		}
 	},

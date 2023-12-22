@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >0.8.0;
 pragma experimental ABIEncoderV2;
-import "./../SafeMath.sol";
+import "./SafeMath.sol";
 
 //INTERFACE DE TOKEN ERC20
 interface IERC20 {
